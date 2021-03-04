@@ -1,0 +1,105 @@
+<div class="content">
+	<div class="test-zone">
+		<mat-card>
+			<mat-card-header>
+				<mat-card-subtitle>
+					Press "Start" to start the tracker, play around, then press
+					"End" to stop the tracker and display what has been
+					recorded.
+				</mat-card-subtitle>
+			</mat-card-header>
+			<mat-card-content>
+				<div class="margin-bottom-64">
+					<button
+						mat-raised-button
+						color="primary"
+						(click)="startTracker()"
+					>
+						Start
+					</button>
+				</div>
+				<div class="flex-row margin-bottom-64">
+					<button mat-raised-button color="accent" id="button1">
+						Button 1
+					</button>
+
+					<button mat-raised-button color="accent" id="button2">
+						Button 2
+					</button>
+
+					<button mat-raised-button color="accent" id="button3">
+						Button 3
+					</button>
+				</div>
+				<div class="margin-bottom-64 flex-row">
+					<mat-form-field appearance="standard" id="testInput">
+						<mat-label>Input</mat-label>
+						<input matInput />
+					</mat-form-field>
+					<mat-form-field appearance="standard" id="testSelector">
+						<mat-label>Select</mat-label>
+						<mat-select>
+							<mat-option value="one">First option</mat-option>
+							<mat-option value="two">Second option</mat-option>
+						</mat-select>
+					</mat-form-field>
+				</div>
+				<div>
+					<button
+						mat-raised-button
+						color="primary"
+						(click)="stopTracker()"
+					>
+						End
+					</button>
+				</div>
+			</mat-card-content>
+		</mat-card>
+	</div>
+
+	<div class="log-zone">
+		<h3 class="area-title">Logs</h3>
+		<div id="flowLogs" class="log-box">
+			<wrapper-table
+				[dataSource]="dataSource"
+				[columns]="displayedColumns"
+				matSort
+				#sort="matSort"
+			>
+				<ng-container matColumnDef="date">
+					<th mat-header-cell *matHeaderCellDef>Date</th>
+					<td mat-cell *matCellDef="let element">{{ element.date | date:'H:mm:ss.SSS' }}</td>
+				</ng-container>
+
+				<ng-container matColumnDef="type">
+					<th mat-header-cell *matHeaderCellDef>Type</th>
+					<td mat-cell *matCellDef="let element">{{ element.type }}</td>
+				</ng-container>
+
+				<ng-container matColumnDef="id">
+					<th mat-header-cell *matHeaderCellDef>ID</th>
+					<td mat-cell *matCellDef="let element">{{ element.id }}</td>
+				</ng-container>
+
+				<ng-container matColumnDef="textContent">
+					<th mat-header-cell *matHeaderCellDef>Text content</th>
+					<td mat-cell *matCellDef="let element">{{ element.textContent }}</td>
+				</ng-container>
+
+				<ng-container matColumnDef="url">
+					<th mat-header-cell *matHeaderCellDef>URL</th>
+					<td mat-cell *matCellDef="let element">{{ element.url }}</td>
+				</ng-container>
+
+				<!-- Custom row definitions to be provided to the wrapper table. -->
+				<tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+				<tr	mat-row	*matRowDef="let row; columns: displayedColumns"></tr>
+
+				<!-- Row shown when there is no matching data that will be provided to the wrapper table. -->
+				<tr class="mat-row" *matNoDataRow>
+					<td class="mat-cell" colspan="4">No data</td>
+				</tr>
+			</wrapper-table>
+		</div>
+	</div>
+</div>

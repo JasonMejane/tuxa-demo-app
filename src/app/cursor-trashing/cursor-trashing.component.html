@@ -1,0 +1,12 @@
+<button
+id="cursorTrashingButton"
+mat-stroked-button
+color="primary"
+class="button"
+(click)="displayLoader()">CLICK ME!</button>
+
+<br/>
+
+<ng-container *ngIf="loading">
+	<mat-spinner></mat-spinner>
+</ng-container>

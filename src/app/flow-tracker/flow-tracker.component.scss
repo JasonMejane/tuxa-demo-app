@@ -1,0 +1,45 @@
+.area-title {
+	color: #555555;
+	font-family: "Jockey One", sans-serif;
+	font-size: large;
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-row {
+	display: flex;
+	justify-content: space-around;
+	margin: 16px;
+}
+
+.log-box {
+	height: 400px;
+	overflow-y: scroll;
+	text-align: left;
+}
+
+.log-zone {
+	padding: 8px;
+	width: 90%;
+}
+
+.margin-bottom-64 {
+	margin-bottom: 64px;
+}
+
+.test-zone {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 8px;
+	width: 90%;
+}
+
+table {
+	width: 100%;
+}

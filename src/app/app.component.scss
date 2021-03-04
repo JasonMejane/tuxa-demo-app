@@ -1,0 +1,80 @@
+.info {
+	width: 60%;
+}
+
+.menu-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.content {
+	margin: 16px 0px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.log-box {
+	overflow-y: scroll;
+	max-height: 400px;
+}
+
+.log-zone {
+	padding: 8px;
+
+	width: 50%;
+}
+
+.test-zone {
+	border-right: 1px solid #cccccc;
+
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 8px;
+
+	width: 50%;
+}
+
+.area-title {
+	color: #555555;
+	font-family: "Jockey One", sans-serif;
+	font-size: x-large;
+	margin-top: 24px;
+}
+
+.title {
+	font-family: "Jockey One", sans-serif;
+	font-size: x-large;
+}
+
+.exp-card {
+	width: 70%;
+}
+
+.exp-card h3 {
+	font-family: "Jockey One", sans-serif;
+	font-size: large;
+}
+
+.margin-top-16 {
+	margin-top: 16px;
+}
+
+.margin-24 {
+	margin-left: 24px;
+	margin-right: 24px;
+}
+
+.img-24 {
+	margin-left: 8px;
+	height: 24px;
+	width: 24px;
+}
+
+mat-toolbar {
+	display: flex;
+	justify-content: space-between;
+}
