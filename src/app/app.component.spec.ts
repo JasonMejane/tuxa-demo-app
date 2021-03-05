@@ -14,10 +14,10 @@ describe('AppComponent', () => {
 		expect(app).toBeTruthy();
 	});
 
-	it(`should have as title 'tuxa-testapp'`, () => {
+	it(`should have as title 'tuxa-demo-app'`, () => {
 		const fixture = TestBed.createComponent(AppComponent);
 		const app = fixture.componentInstance;
-		expect(app.title).toEqual('tuxa-testapp');
+		expect(app.title).toEqual('tuxa-demo-app');
 	});
 
 	it('should render title', () => {
@@ -25,7 +25,7 @@ describe('AppComponent', () => {
 		fixture.detectChanges();
 		const compiled = fixture.nativeElement;
 		expect(compiled.querySelector('.content span').textContent).toContain(
-			'tuxa-testapp app is running!'
+			'tuxa-demo-app app is running!'
 		);
 	});
 });

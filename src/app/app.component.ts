@@ -12,7 +12,7 @@ import { TuxaService } from './tuxa.service';
 	styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit, OnDestroy {
-	title = 'tuxa-testapp';
+	title = 'tuxa-demo-app';
 	cSel = 'rage-click';
 	public displayedColumns: string[] = [
 		'date',
