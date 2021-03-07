@@ -1,8 +1,13 @@
-# Tuxa Demo App
+# Tuxa Demo App<p align="center">
 
 ## Tuxa homepage
 
 https://github.com/JasonMejane/tuxa#readme
+<p>
+  <a href="https://www.npmjs.com/tuxa">
+    <img src="https://img.shields.io/npm/v/tuxa.svg?logo=npm&logoColor=fff&label=NPM+package&color=limegreen" alt="Tuxa on npm" />
+  </a>&nbsp;
+</p>
 
 ## Tuxa installation
 
