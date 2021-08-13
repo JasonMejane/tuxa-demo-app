@@ -25,9 +25,9 @@
 		"@angular/platform-browser": "11.2.4",
 		"@angular/platform-browser-dynamic": "11.2.4",
 		"@angular/router": "11.2.4",
-		"rxjs": "6.6.6",
+		"rxjs": "6.6.7",
 		"tslib": "2.1.0",
-		"tuxa": "^1.0.4",
+		"tuxa": "^1.0.5",
 		"zone.js": "0.11.4"
 	},
 	"devDependencies": {
